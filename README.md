@@ -55,7 +55,7 @@ El servicio realiza lo siguiente:
 
     ```json
     {
-      "palindromo": "Anita lava la tina"
+      "palindromo": "Anita lava* la tina"
     }
     ```
 
@@ -64,8 +64,8 @@ El servicio realiza lo siguiente:
     ```json
     {
       "isPalindromo": true,
-      "lengthCadena": 15,
-      "lengthCaracteresExpeciales": 5
+      "lengthCadena": 19,
+      "lengthCaracteresExpeciales": 1
     }
     ```
 
