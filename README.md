@@ -63,15 +63,15 @@ El servicio realiza lo siguiente:
 
     ```json
     {
-      "isPalindrome": true,
-      "lengthPhrase": 15,
-      "totalSpecialCharacters": 5
+      "isPalindromo": true,
+      "lengthCadena": 15,
+      "lengthCaracteresExpeciales": 5
     }
     ```
 
-    - `isPalindrome`: Booleano indicando si la frase es un palíndromo.
-    - `lengthPhrase`: Entero con la longitud de la frase.
-    - `totalSpecialCharacters`: Entero con el número de caracteres especiales.
+    - `isPalindromo`: Booleano indicando si la frase es un palíndromo.
+    - `lengthCadena`: Entero con la longitud de la frase.
+    - `lengthCaracteresExpeciales`: Entero con el número de caracteres especiales.
 
 ## Documentación
 

@@ -10,9 +10,9 @@ import lombok.Data;
 public class PalindromeResponse {
 
     @Schema(description = "Indica si la frase es un palíndromo", example = "true")
-    private boolean isPalindrome;
+    private boolean isPalindromo;
     @Schema(description = "Indica la longitus de la frase", example = "15")
-    private int lengthPhrase;
+    private int lengthCadena;
     @Schema(description = "Indica el total de caracteres especiales presente en la frase", example = "5")
-    private int totalSpecialCharacters;
+    private int lengthCaracteresExpeciales;
 }

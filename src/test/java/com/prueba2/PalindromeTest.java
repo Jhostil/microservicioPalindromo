@@ -35,9 +35,9 @@ public class PalindromeTest {
 
         PalindromeResponse response = (PalindromeResponse) responseEntity.getBody();
 
-        assertEquals(true, response.isPalindrome());
-        assertEquals(18, response.getLengthPhrase());
-        assertEquals(2, response.getTotalSpecialCharacters());
+        assertEquals(true, response.isPalindromo());
+        assertEquals(18, response.getLengthCadena());
+        assertEquals(2, response.getLengthCaracteresExpeciales());
 
     }
 
