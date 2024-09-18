@@ -3,28 +3,34 @@ package com.prueba2;
 import com.prueba2.controller.PalindromeController;
 import com.prueba2.model.PalindromeRequest;
 import com.prueba2.model.PalindromeResponse;
-import com.prueba2.service.PalindromeService;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import org.springframework.http.ResponseEntity;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.when;
 
+/**
+ * Clase que permite ejecutar tests a la aplicación
+ */
 public class PalindromeTest {
 
+    /**
+     * Varaible que representa una referencia al controlador
+     */
     private PalindromeController palindromeController;
 
+    /**
+     * Método que permite inicializar el controlador antes de ejecutar las pruebas
+     */
     @BeforeEach
     public void setup(){
         palindromeController = new PalindromeController();
     }
 
+    /**
+     * Método que permite ejecutar un test para verificar el correcto funcionamiento de la lógica de la aplicación
+     * Este método verifica si una cadena es palíndromo, el tamaño de la cadena y el total de caracteres especiales presentes en la cadena.
+     */
     @Test
     public void testPalindrome(){
 
