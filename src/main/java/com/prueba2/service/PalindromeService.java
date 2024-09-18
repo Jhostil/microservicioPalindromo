@@ -7,8 +7,6 @@ public class PalindromeService {
         phrase = phraseWithoutSpaces.toLowerCase();
 
         String reversePhrase = new StringBuilder(phrase).reverse().toString();
-        System.out.println("Normal:" + phrase);
-        System.out.println("Invertida: " + reversePhrase);
 
         return phrase.equals(reversePhrase);
     }
