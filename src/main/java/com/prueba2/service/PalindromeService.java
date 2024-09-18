@@ -3,7 +3,8 @@ package com.prueba2.service;
 public class PalindromeService {
 
     public static boolean isPalindrome(String phrase) {
-        phrase = phrase.toLowerCase();
+        String phraseWithoutSpaces = PalindromeService.deleteSpaces(phrase);
+        phrase = phraseWithoutSpaces.toLowerCase();
 
         String reversePhrase = new StringBuilder(phrase).reverse().toString();
         System.out.println("Normal:" + phrase);
@@ -39,7 +40,6 @@ public class PalindromeService {
                 newPhrase.append(character);
             }
         }
-
         return newPhrase.toString();
     }
 

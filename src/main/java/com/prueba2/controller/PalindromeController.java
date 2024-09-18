@@ -17,8 +17,8 @@ public class PalindromeController {
     public ResponseEntity<?> processPalindrome(@RequestBody PalindromeRequest request) {
 
         String phrase = request.getPalindromo();
-        String phraseWithoutSpaces = PalindromeService.deleteSpaces(phrase);
-        boolean isPalindrome = PalindromeService.isPalindrome(phraseWithoutSpaces);
+
+        boolean isPalindrome = PalindromeService.isPalindrome(phrase);
         int lengthPhrase = PalindromeService.getLength(phrase);
         int totalSpecialCharacters = PalindromeService.countSpecialCharacters(phrase);
 
